@@ -22,34 +22,8 @@ def add_bg_from_url():
             overflow: hidden;
         }}
 
-        .sparkle {{
-          position: absolute;
-          width: 8px;
-          height: 8px;
-          background: white;
-          box-shadow: 0 0 10px white;
-          border-radius: 50%;
-          animation: sparkleAnim 2s infinite ease-in-out;
-        }}
-
-        @keyframes sparkleAnim {{
-          0% {{ transform: translateY(0) scale(1); opacity: 1; }}
-          100% {{ transform: translateY(-200px) scale(0.5); opacity: 0; }}
-        }}
-        </style>
-        <script>
-        for (let i = 0; i < 50; i++) {{
-          const sparkle = document.createElement('div');
-          sparkle.classList.add('sparkle');
-          sparkle.style.left = Math.random() * 100 + '%';
-          sparkle.style.top = (Math.random() * 100 + 100) + 'px';
-          sparkle.style.animationDelay = (Math.random() * 2) + 's';
-          document.body.appendChild(sparkle);
-        }}
-        </script>
-        """,
-        unsafe_allow_html=True
-    )
+      
+       
 
 # Add animated hearts and jar animation
 heart_and_jar_animation = """
@@ -239,11 +213,7 @@ quotes = {
     ]
 }
 
-# Page content
 
-
-st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: cursive;'>Healing Jar for You</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; font-style: italic; color: white;'>Choose how you're feeling, my love. A divine whisper awaits to bring peace to your heart.</p>", unsafe_allow_html=True)
 
 emotion = st.selectbox("What are you feeling right now?", list(quotes.keys()))
 
