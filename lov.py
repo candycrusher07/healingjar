@@ -78,7 +78,7 @@ if st.session_state.show_love:
         if char == " ":
             st.markdown("&nbsp;&nbsp;", unsafe_allow_html=True)
         else:
-            st.markdown(f"<span style='color:#ff66b2;'>{'🌸' * 3} {char} {'🌸' * 3}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='color:#ff66b2;'>{'🌸' * 1} {char} {'🌸' * 1}</span>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
     # Page content
 st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: Quicksand, sans-serif;'>Healing Jar for You</h1>", unsafe_allow_html=True)
