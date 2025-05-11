@@ -5,6 +5,9 @@ import base64
 # Set page config FIRST
 st.set_page_config(page_title="Healing Jar", layout="centered")
 
+import streamlit as st
+
+# Inject custom CSS with your background image
 st.markdown("""
     <style>
     [data-testid="stAppViewContainer"] {
@@ -14,9 +17,24 @@ st.markdown("""
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-    
+   
+    h2 {
+        color: #b86f91;
+        font-family: 'Georgia', serif;
+    }
     </style>
 """, unsafe_allow_html=True)
+
+# Display the message box
+st.markdown("""
+    <div class="msg-box">
+        <h2 style="text-align: center;">Happy Women's Day, My Love! 💖</h2>
+        <p>
+            My dearest love, you are a blessing that Allah (SWT) has bestowed upon me, and I am forever grateful for you.
+            The Prophet (SAW) said, <em>"The best of you are those who are best to their women,"</em> and I strive every day
+            to honor you as the queen of my heart.<br><br>
+            Your kindness, patience, and beauty remind me of the words of the Quran: <strong>"And We created you in pairs" (78:8).</strong>
+
 
 # Header
 
