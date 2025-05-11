@@ -8,23 +8,26 @@ st.set_page_config(page_title="Healing Jar", layout="centered")
 import streamlit as st
 
 # Inject custom CSS with your background image
-st.markdown("""
+st.markdown(
+    f"""
     <style>
-    [data-testid="stAppViewContainer"] {
-        background-image: url('https://cdn-media-0.freecodecamp.org/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg');
+    .stApp {{
+        background-image: url("https://cdn-media-0.freecodecamp.org/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-    }
+        color: #333333;
+    }}
    
-    h2 {
-        color: #b86f91;
-        font-family: 'Georgia', serif;
-    }
+ h2 {{
+        text-align: center;
+        color: #d45587;
+    }}
     </style>
-""", unsafe_allow_html=True)
-
+    """,
+    unsafe_allow_html=True
+)
 # Display the message box
 
 
