@@ -40,22 +40,22 @@ heart_and_jar_animation = """
         100% { transform: translateY(0px); }
     }
 
-.heart {{
+.heart {
   color: #ffb6c1;
   font-size: 26px;
   animation: float 4s ease-in-out infinite;
   display: inline-block;
   margin: 0 6px;
-}}
+}
 
-.jar {{
+.jar {
   width: 150px;
   margin: 0 auto;
   display: block;
   animation: float 5s ease-in-out infinite;
   border-radius: 20px;
   box-shadow: 0px 0px 20px pink;
-}}
+}
 </style>
 <div style='text-align:center;'>
   <span class='heart'>💖</span>
@@ -64,7 +64,9 @@ heart_and_jar_animation = """
 </div>
 <br>
 <img src='https://i.pinimg.com/originals/8a/80/6f/8a806f3a0473484ddcd10d6a9987813d.gif' class='jar'>
-""", unsafe_allow_html=True)
+""", 
+unsafe_allow_html=True
+)
 
 # Soft romantic music embed
 def add_background_music():
