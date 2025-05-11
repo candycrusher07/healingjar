@@ -8,10 +8,30 @@ st.set_page_config(page_title="Healing Jar", layout="centered")
 # Custom background with pastel gradient
 page_bg = """
 <style>
- @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-body {
-    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-    font-family: 'Arial', sans-serif;
+ st.markdown("""
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    [data-testid="stAppViewContainer"] {
+        background-image: url('https://i.imgur.com/J7j1cqC.jpg');  /* pastel pink floral bg */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .msg-box {
+        background-color: rgba(255,255,255,0.9);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+    font-family: 'Quicksand', sans-serif;
     color: #333;
 }
 </style>
