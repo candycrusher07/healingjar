@@ -12,7 +12,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-color: #fffafc;
+        background-color: #000000;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
