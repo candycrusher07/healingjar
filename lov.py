@@ -1,8 +1,9 @@
 import streamlit as st
-import time
 import random
+import base64
 
-st.set_page_config(page_title="Women's Day Wish", layout="centered")
+# Set page config FIRST
+st.set_page_config(page_title="Healing Jar", layout="centered")
 
 # Custom background with pastel gradient
 page_bg = """
