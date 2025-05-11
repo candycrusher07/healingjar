@@ -12,7 +12,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-color: #c490fc;
+        background-color: #000000;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -56,7 +56,7 @@ if "show_love" not in st.session_state:
 
 # Title or Heading
 st.markdown(
-    "<h2 style='text-align: center; color: #b86f91;'>🌸 Tap the button to bloom lilies 🌸</h2>",
+    "<h2 style='text-align: center; color: #b86f91;'>🌻 Tap the button to bloom Sunflower 🌻</h2>",
     unsafe_allow_html=True
 )
 
@@ -66,7 +66,7 @@ if st.button("Tap to Bloom"):
     st.session_state.u_count = 1  # reset on new tap
 
 # Button to bloom more 'u's
-if st.button("Bloom More Lilies 💐"):
+if st.button("Bloom More Sunflower 💐"):
     if st.session_state.show_love:
         st.session_state.u_count += 1
 
@@ -78,7 +78,7 @@ if st.session_state.show_love:
         if char == " ":
             st.markdown("&nbsp;&nbsp;", unsafe_allow_html=True)
         else:
-            st.markdown(f"<span style='color:#ff66b2;'>{'🌸' * 1} {char} {'🌸' * 1}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='color:#ff66b2;'>{'🌻' * 1} {char} {'🌻' * 1}</span>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
     # Page content
 st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: Quicksand, sans-serif;'>Healing Jar for You</h1>", unsafe_allow_html=True)
