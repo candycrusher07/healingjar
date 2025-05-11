@@ -21,11 +21,11 @@ st.markdown(page_bg, unsafe_allow_html=True)
 
 
 # Lily animation simulation using emojis
-lily_area = st.empty()
-for _ in range(30):
-    lily_line = "".join(["🌸" if random.random() > 0.2 else " " for _ in range(20)])
-    lily_area.markdown(f"<div style='text-align:center;font-size:25px;'>{lily_line}</div>", unsafe_allow_html=True)
-    time.sleep(0.15)
+st.markdown("<h3 style='text-align: center;'>🌸 Tap the button to bloom lilies 🌸</h3>", unsafe_allow_html=True)
+if st.button("Bloom More Lilies 💐"):
+    for _ in range(10):
+        line = "".join(["🌸" if random.random() > 0.2 else " " for _ in range(20)])
+        st.markdown(f"<div style='text-align:center;font-size:25px;'>{line}</div>", unsafe_allow_html=True)
     # Page content
 st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: Quicksand, sans-serif;'>Healing Jar for You</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-style: italic; color: white; font-size: 18px;'>Choose how you're feeling, my love. A divine whisper awaits to bring peace to your heart.</p>", unsafe_allow_html=True)
