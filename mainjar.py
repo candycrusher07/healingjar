@@ -28,17 +28,13 @@ def add_bg_from_url():
       
        
 
-# Add animated hearts and jar animation
 heart_and_jar_animation = """
-
-
-   st.markdown("""
-    <style>
-    @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-    }
+<style>
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
 
 .heart {
   color: #ffb6c1;
@@ -57,6 +53,7 @@ heart_and_jar_animation = """
   box-shadow: 0px 0px 20px pink;
 }
 </style>
+
 <div style='text-align:center;'>
   <span class='heart'>💖</span>
   <span class='heart'>💗</span>
@@ -64,10 +61,10 @@ heart_and_jar_animation = """
 </div>
 <br>
 <img src='https://i.pinimg.com/originals/8a/80/6f/8a806f3a0473484ddcd10d6a9987813d.gif' class='jar'>
-""", 
-unsafe_allow_html=True
-)
+"""
 
+# Inject the HTML/CSS into Streamlit
+st.markdown(heart_and_jar_animation, unsafe_allow_html=True)
 # Soft romantic music embed
 def add_background_music():
     st.markdown(
