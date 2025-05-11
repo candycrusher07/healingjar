@@ -22,7 +22,7 @@ st.markdown(
    
  h2 {{
         text-align: center;
-        color: #d45587;
+        color: #b86f91;
     }}
     </style>
     """,
