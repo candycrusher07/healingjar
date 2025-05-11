@@ -5,33 +5,18 @@ import base64
 # Set page config FIRST
 st.set_page_config(page_title="Healing Jar", layout="centered")
 
-# Custom background with pastel gradient
-<style>
- st.markdown("""
-    body {
-        margin: 0;
-        padding: 0;
-    }
+st.markdown("""
+    <style>
     [data-testid="stAppViewContainer"] {
-        background-image: url('https://i.imgur.com/J7j1cqC.jpg');  /* pastel pink floral bg */
+        background-image: url('https://i.imgur.com/J7j1cqC.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-    .msg-box {
-        background-color: rgba(255,255,255,0.9);
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        font-size: 18px;
-        margin-top: 20px;
-     font-family: 'Quicksand', sans-serif;
-    color: #333;
-}
-</style>
-"""
-st.markdown(page_bg, unsafe_allow_html=True)
+    
+    </style>
+""", unsafe_allow_html=True)
 
 # Header
 
