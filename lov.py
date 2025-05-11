@@ -28,7 +28,24 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# Display the message box
+st.markdown("""
+<style>
+div.stButton > button {
+    color: #b86f91 !important;          /* Text color */
+    background-color: #ffe0f0 !important; /* Background */
+    border-radius: 12px;
+    border: 1px solid #b86f91;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+div.stButton > button:hover {
+    background-color: #fcd5eb !important;
+    color: #8b3a62 !important;
+    transform: scale(1.05);
+}
+</style>
+""", unsafe_allow_html=True)
 
 
 # Lily animation simulation using emojis
