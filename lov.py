@@ -32,7 +32,7 @@ st.markdown("<p style='text-align: center; font-style: italic; color: white; fon
 
 # Emotions and Quotes
 emotions = ["Stressed", "Anxious", "Angry", "Low", "Overthinking"]
-choice = st.selectbox("How are you feeling today?", emotions)
+
 
 quotes = {
     "Anger": [
@@ -147,6 +147,7 @@ quotes = {
     ]
 }
 
+emotion = st.selectbox("What are you feeling right now?", list(quotes.keys()))
 
 
 
