@@ -2,6 +2,8 @@ import streamlit as st
 import random
 import base64
 
+st.set_page_config(page_title="Healing Jar", layout="centered")
+
 # Background image function
 def add_bg_from_url():
     st.markdown(
@@ -160,7 +162,7 @@ quotes = {
 }
 
 # Page content
-st.set_page_config(page_title="Healing Jar", layout="centered")
+
 
 st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: cursive;'>Healing Jar for You</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-style: italic; color: white;'>Choose how you're feeling, my love. A divine whisper awaits to bring peace to your heart.</p>", unsafe_allow_html=True)
