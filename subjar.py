@@ -13,7 +13,7 @@ def add_bg_from_url():
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
         .stApp {{
-            background-image: url("https://i.pinimg.com/originals/bd/1f/21/bd1f218a2d166963509d3f932e4c13bb.jpg");
+            background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
