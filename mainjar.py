@@ -61,7 +61,7 @@ heart_and_jar_animation = """
 </div>
 <br>
 <img src='https://i.pinimg.com/originals/8a/80/6f/8a806f3a0473484ddcd10d6a9987813d.gif' class='jar'>
-"""
+""", unsafe_allow_html=True)
 
 # Soft romantic music embed
 def add_background_music():
