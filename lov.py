@@ -12,7 +12,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("https://cdn-media-0.freecodecamp.org/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");
+        background-color: #000000;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -35,14 +35,14 @@ st.markdown(
 st.markdown("<h3 style='text-align: center;'>🌸 Tap the button to bloom lilies 🌸</h3>", unsafe_allow_html=True)
 if st.button("Bloom More Lilies 💐"):
     for _ in range(10):
-        line = "".join(["🌸" if random.random() > 0.2 else " " for _ in range(20)])
+        line = "".join(["🌸" if random.random() > 0.2 else " " for _ in range(10)])
         st.markdown(f"<div style='text-align:center;font-size:25px;'>{line}</div>", unsafe_allow_html=True)
     # Page content
 st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: Quicksand, sans-serif;'>Healing Jar for You</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-style: italic; color: white; font-size: 18px;'>Choose how you're feeling, my love. A divine whisper awaits to bring peace to your heart.</p>", unsafe_allow_html=True)
 
 # Emotions and Quotes
-emotions = ["Stressed", "Anxious", "Angry", "Low", "Overthinking"]
+emotions = ["Stressed", "Anxious", "Angry", "Low", "Overthinking","BreakUp"]
 
 
 quotes = {
@@ -155,6 +155,11 @@ quotes = {
         "Indeed, Allah is subtle with His servants. (42:19)",
         "Allah is ever Knowing and Wise. (4:26)",
         "Your Lord is never forgetful. (19:64)"
+    ],
+    "BreakUp": [
+        "Tell sorry to guddu and go to sleep",
+        "Psych ain't leaving you girl",
+        "Sharam Karro"
     ]
 }
 
