@@ -34,7 +34,7 @@ div.stButton > button {
     color: #b86f91 !important;          /* Text color */
     background-color: #ffe0f0 !important; /* Background */
     border-radius: 12px;
-    border: 1px solid #b86f91;
+    border: 1px solid #FDFD96;
     font-weight: bold;
     font-size: 18px;
     transition: 0.3s ease;
@@ -56,7 +56,7 @@ if "show_love" not in st.session_state:
 
 # Title or Heading
 st.markdown(
-    "<h2 style='text-align: center; color: #b86f91;'>🌻 Tap the button to bloom Sunflower 🌻</h2>",
+    "<h2 style='text-align: center; color: #FDFD96;'>🌻 Tap the button to bloom Sunflower 🌻</h2>",
     unsafe_allow_html=True
 )
 
@@ -78,10 +78,10 @@ if st.session_state.show_love:
         if char == " ":
             st.markdown("&nbsp;&nbsp;", unsafe_allow_html=True)
         else:
-            st.markdown(f"<span style='color:#ff66b2;'>{'🌻' * 1} {char} {'🌻' * 1}</span>", unsafe_allow_html=True)
+            st.markdown(f"<span style='color:##FDFD96;'>{'🌻' * 1} {char} {'🌻' * 1}</span>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
     # Page content
-st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: Quicksand, sans-serif;'>Healing Jar for You</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: ##FDFD96; font-family: Quicksand, sans-serif;'>Healing Jar for You</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-style: italic; color: white; font-size: 18px;'>Choose how you're feeling, my love. A divine whisper awaits to bring peace to your heart.</p>", unsafe_allow_html=True)
 
 # Emotions and Quotes
