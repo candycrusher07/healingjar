@@ -67,7 +67,7 @@ heart_and_jar_animation = """
   <span class='heart'>💞</span>
 </div>
 <br>
-<img src='https://i.ibb.co/3B4nF9F/magic-jar.gif' class='jar'>
+<img src='https://i.gifer.com/4tyu.gif' class='jar'>
 """
 
 # Soft romantic music embed
@@ -102,4 +102,4 @@ quotes = {
 
 if st.button("Pick a Healing Slip 💌"):
     selected_quote = random.choice(quotes[choice])
-    st.markdown(f"<div style='padding:20px; background-color:#fff0f5; border-radius:20px; text-align:center; font-size:20px;'><em>\"{selected_quote}\"</em></div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='padding:20px; background-color:##F8C8DC; border-radius:20px; text-align:center; font-size:20px;'><em>\"{selected_quote}\"</em></div>", unsafe_allow_html=True)
