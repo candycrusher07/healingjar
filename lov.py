@@ -149,7 +149,6 @@ quotes = {
 
 
 
-emotion = st.selectbox("What are you feeling right now?", list(quotes.keys()))
 
 if st.button("Pick a Jar Slip"):
     chosen_quote = random.choice(quotes[emotion])
