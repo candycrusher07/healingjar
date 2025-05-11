@@ -25,30 +25,29 @@ def add_bg_from_url():
         unsafe_allow_html=True
     )
 
-      
-       
+      import streamlit as st
 
 heart_and_jar_animation = """
 <style>
 @keyframes float {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-20px); }
     100% { transform: translateY(0px); }
 }
 
 .heart {
-  color: #ffb6c1;
-  font-size: 26px;
-  animation: float 4s ease-in-out infinite;
+  color: #ff69b4;
+  font-size: 32px;
+  animation: float 2s ease-in-out infinite;
   display: inline-block;
-  margin: 0 6px;
+  margin: 0 8px;
 }
 
 .jar {
   width: 150px;
   margin: 0 auto;
   display: block;
-  animation: float 5s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   border-radius: 20px;
   box-shadow: 0px 0px 20px pink;
 }
@@ -62,6 +61,9 @@ heart_and_jar_animation = """
 <br>
 <img src='https://i.pinimg.com/originals/8a/80/6f/8a806f3a0473484ddcd10d6a9987813d.gif' class='jar'>
 """
+
+st.markdown(heart_and_jar_animation, unsafe_allow_html=True)
+
 
 # Inject the HTML/CSS into Streamlit
 st.markdown(heart_and_jar_animation, unsafe_allow_html=True)
