@@ -21,6 +21,9 @@ def add_bg_from_url():
             position: relative;
             overflow: hidden;
         }}
+          """,
+        unsafe_allow_html=True
+    )
 
       
        
