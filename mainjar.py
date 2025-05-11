@@ -30,7 +30,7 @@ heart_and_jar_animation = """
 <style>
 @keyframes float {{
   0% {{ transform: translateY(0px); }}
-  50% {{ transform: translateY(-20px); }}
+  50% {{ transform: translateY(-10px); }}
   100% {{ transform: translateY(0px); }}
 }}
 
