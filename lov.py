@@ -32,7 +32,7 @@ st.markdown(
 
 
 # Lily animation simulation using emojis
-st.markdown("<h3 style='text-align: center;'>🌸 Tap the button to bloom lilies 🌸</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;color: #b86f91;'>🌸 Tap the button to bloom lilies 🌸</h3>", unsafe_allow_html=True)
 if st.button("Bloom More Lilies 💐"):
     for _ in range(10):
         line = "".join(["🌸" if random.random() > 0.2 else " " for _ in range(10)])
