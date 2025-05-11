@@ -28,10 +28,12 @@ def add_bg_from_url():
 # Add animated hearts and jar animation
 heart_and_jar_animation = """
 <style>
-@keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
+st.markdown("""
+    <style>
+    @keyframes float {
+        0% {{ transform: translateY(0px); }}
+        50% {{ transform: translateY(-10px); }}
+        100% {{ transform: translateY(0px); }}
     }
 
 .heart {{
