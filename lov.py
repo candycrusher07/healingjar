@@ -8,6 +8,7 @@ st.set_page_config(page_title="Healing Jar", layout="centered")
 # Custom background with pastel gradient
 page_bg = """
 <style>
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 body {
     background: linear-gradient(to right, #fbc2eb, #a6c1ee);
     font-family: 'Arial', sans-serif;
