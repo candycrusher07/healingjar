@@ -6,7 +6,6 @@ import base64
 st.set_page_config(page_title="Healing Jar", layout="centered")
 
 # Custom background with pastel gradient
-page_bg = """
 <style>
  st.markdown("""
     body {
@@ -27,11 +26,7 @@ page_bg = """
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         font-size: 18px;
         margin-top: 20px;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-    font-family: 'Quicksand', sans-serif;
+     font-family: 'Quicksand', sans-serif;
     color: #333;
 }
 </style>
