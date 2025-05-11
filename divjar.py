@@ -60,6 +60,12 @@ heart_and_jar_animation = """
   border-radius: 20px;
   box-shadow: 0px 0px 20px pink;
 }}
+lily_area = st.empty()
+for _ in range(30):
+    lily_line = "".join(["🌸" if random.random() > 0.2 else " " for _ in range(20)])
+    lily_area.markdown(f"<div style='text-align:center;font-size:25px;'>{lily_line}</div>", unsafe_allow_html=True)
+    time.sleep(0.15)
+
 </style>
 <div style='text-align:center;'>
   <span class='heart'>💖</span>
