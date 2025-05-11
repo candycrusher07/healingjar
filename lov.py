@@ -17,7 +17,7 @@ st.markdown(
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        color: #333333;
+        color: #000000;
     }}
    
  h2 {{
@@ -42,7 +42,7 @@ st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: Quicksa
 st.markdown("<p style='text-align: center; font-style: italic; color: white; font-size: 18px;'>Choose how you're feeling, my love. A divine whisper awaits to bring peace to your heart.</p>", unsafe_allow_html=True)
 
 # Emotions and Quotes
-emotions = ["Stressed", "Anxious", "Angry", "Low", "Overthinking","BreakUp"]
+emotions = ["Stressed", "Anxious", "Angry", "Low", "Overthinking", "BreakUp"]
 
 
 quotes = {
