@@ -17,7 +17,7 @@ st.markdown(
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        color: #000000;
+        color: #fffafc;
     }}
    
  h2 {{
