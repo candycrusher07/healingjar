@@ -8,7 +8,7 @@ st.set_page_config(page_title="Healing Jar", layout="centered")
 st.markdown("""
     <style>
     [data-testid="stAppViewContainer"] {
-        background-image: url('https://i.imgur.com/J7j1cqC.jpg');
+        background-image: url('https://cdn-media-0.freecodecamp.org/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
