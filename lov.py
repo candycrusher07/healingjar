@@ -48,12 +48,38 @@ div.stButton > button:hover {
 """, unsafe_allow_html=True)
 
 
-# Lily animation simulation using emojis
-st.markdown("<h3 style='text-align: center;color: #b86f91;'>🌸 Tap the button to bloom lilies 🌸</h3>", unsafe_allow_html=True)
+# Initialize session state
+if "u_count" not in st.session_state:
+    st.session_state.u_count = 1
+if "show_love" not in st.session_state:
+    st.session_state.show_love = False
+
+# Title or Heading
+st.markdown(
+    "<h2 style='text-align: center; color: #b86f91;'>🌸 Tap the button to bloom lilies 🌸</h2>",
+    unsafe_allow_html=True
+)
+
+# Button to show "I LOVE YOU" made of lilies
+if st.button("Tap to Bloom"):
+    st.session_state.show_love = True
+    st.session_state.u_count = 1  # reset on new tap
+
+# Button to bloom more 'u's
 if st.button("Bloom More Lilies 💐"):
-    for _ in range(10):
-        line = "".join(["🌸" if random.random() > 0.2 else " " for _ in range(10)])
-        st.markdown(f"<div style='text-align:center;font-size:25px;'>{line}</div>", unsafe_allow_html=True)
+    if st.session_state.show_love:
+        st.session_state.u_count += 1
+
+# Display the text made of lilies
+if st.session_state.show_love:
+    love_message = f"I LOVE YOU{'U' * (st.session_state.u_count - 1)}"
+    st.markdown("<div style='text-align:center;font-size:32px;'>", unsafe_allow_html=True)
+    for char in love_message:
+        if char == " ":
+            st.markdown("&nbsp;&nbsp;", unsafe_allow_html=True)
+        else:
+            st.markdown(f"<span style='color:#ff66b2;'>{'🌸' * 3} {char} {'🌸' * 3}</span>", unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True)
     # Page content
 st.markdown("<h1 style='text-align: center; color: #FF69B4; font-family: Quicksand, sans-serif;'>Healing Jar for You</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-style: italic; color: white; font-size: 18px;'>Choose how you're feeling, my love. A divine whisper awaits to bring peace to your heart.</p>", unsafe_allow_html=True)
