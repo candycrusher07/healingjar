@@ -202,7 +202,8 @@ quotes = {
     "BreakUp": [
         "Tell sorry to guddu and go to sleep",
         "Psych ain't leaving you girl",
-        "Sharam Karro"
+        "Sharam Karro",
+        "blowjob diyo"
     ]
 }
 
